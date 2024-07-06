@@ -122,9 +122,45 @@
 		# git status
 		 
 	************************************ After Intalling Git Adding Folder *********************************
+	
+	- create the file
 		
+	// add the file to .git
+	# git add <file name> 
+		- add the file to .git and not commited it ( added to staging area )
+		- Think commit = save file to .git
+	// check git status
+	# git status
+		- look for the instruction, we will find the "Changes to be commited:"
+	
+	// to remove from staging area
+	# git rm -cached <file name>
 		
-		
-		
+	// to know all the commit history
+	# git log
+	
+	Note: when to commit and how much often have to commit, depend on the project and company instruction
+	Must have to add the comment to commit to know which and what file is committed to who as well.
+	If the company have the issue ticket system, then have to mentions that ticket number as well
+	- commit will be abort, if we don't pass the message
+	
+	// to commit
+	# git commit
+
+	// to put message
+	# git commit -m "message"
+		- look instruction.
+	// check status
+	# git status
+	
+	NOTE: git provide some unique number called checksum to trach the change in the file.
+		 checksum is like finger print.
+	example: [main (root-commit) 3305bc2], the last unique number ((Behind it have 40 character)First 7 digit hexadecimal number)
+	
+	- checksum is done with SHA-1
+	
+	// check the log history
+	# git log
+	
 	
 	
