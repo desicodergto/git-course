@@ -57,6 +57,7 @@
 	Can be work with GUI or CUI.
 	* CUI = more control flow and more recommended to work with.
 	
+	NOTE: Working directory > after adding goes to > Staging area(index) > after commit goes to > Commit history(objects) 
 	
 	************************************ Intalling Git ( working directory and local branch .git ) *********************************
 	NOTE: # = command line, don't put the # in the command 
@@ -161,6 +162,8 @@
 	
 	// check the log history
 	# git log
-	
+		- show all the commit history
+		
+	Note: After saving the file, it becomes the modified file and if we notice to the file name we get M .
 	
 	
