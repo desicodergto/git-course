@@ -164,6 +164,12 @@
 	# git log
 		- show all the commit history
 		
-	Note: After saving the file, it becomes the modified file and if we notice to the file name we get M .
-	
-	
+	Note: After saving the file, it becomes the modified file and if we notice to the file name we get M in VS code.
+		- after staging, this M will be gone.
+		
+	// direct commit (meaning skipping the staging part = git add <file name>)
+	# git commit -a -m "comment"
+		- Working directory > commit history(objects)
+		
+		
+		
