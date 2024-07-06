@@ -182,5 +182,9 @@
 		- show the difference of previous version and present version of file
 		
 	// finding diff after adding to staging area
-	# git diff --stagged
+	# git diff --staged
+	
+	[ NOTE: Readme.md  where md = markdown, used for proper documentation ]
+	
+	
 	
