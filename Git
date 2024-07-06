@@ -1,0 +1,130 @@
+ Git : Distributed version control and collaboration.
+ 	   Some example of version control system are:
+ 	   		1. bitkeeper ( old )
+ 	   		2. gitlab
+ 	   		3. github 
+ 	   		4. git and many more
+ 
+ 		1. Version Control
+ 		2. Collaboration
+ 		
+ 		- Every New update will be store as a new file.
+ 		- Can be back and for to its version.
+ 		- Track record of update can be shown easily.
+ 		- Easy to collaborate with multiple people in single project
+ 		
+ 		# Different Types Of: Version Control System
+ 		--------------------------------------------
+ 		
+ 		1. Local Version Control
+ 			- We can create a local database to store all the version. 
+	 		- But we can not be able to collaborate with other. 
+	 		: to solve this issue, we have the system called CVCS ( Centralized Version Control System )
+ 		
+ 		2. Centralized Version Control System (CVCS)
+ 		
+ 			layer : Server -> Repository -> ( update and commit ) -> working copy ( separately for each developer )
+ 		
+ 		# Advantage of (CVSC): 
+ 		----------------------
+ 			Every one have access to it. Group will know that on which topic we are working. 
+ 			Makes easy to communicate.
+ 			
+ 		# Disadvantage of (CVSC):
+ 		-------------------------
+ 			File gone a replace by on commit
+ 			
+ 			
+ 		3.Distributed Version Control System (DVCS):
+ 		--------------------------------------------
+ 			layer : Server > Repository > local repository > working copy
+ 		
+ 		** Open Source Project : Anyone can contribute to the project.
+ 		
+ 		# History:
+ 		----------
+ 			Early days: Archive files or Sending the patches are mostly used
+ 			linux was using the gitkeeper. linux is free community open source. when gitkeeper start charging then they move to git.
+ 			In this way the git was born.
+ 			
+ 			Advantage of git:
+ 			1. Simple to use
+ 			2. Fast
+ 			3. Branching
+ 			4. Fully distributed Which make the git so famous.
+ 			
+ 		
+	Can be work with GUI or CUI.
+	* CUI = more control flow and more recommended to work with.
+	
+	
+	************************************ Intalling Git ( working directory and local branch .git ) *********************************
+	NOTE: # = command line, don't put the # in the command 
+	
+	- to know the git is installed or not
+		# git --version
+		
+		[ Note: In mac (Xcode) git is already installed. Windows: we have to install ]
+		
+		# git download > select the right version for your os > download
+		
+		* move with all the default configuration or you can change it according to your own.
+		
+		- After installing, we have to make the user who will gone a work together
+		# git config
+		
+		- user name have to mentioned
+		- Email Must have to config to git
+		
+		- to get all the variable 
+		# git config --global --list
+			- show you all the detail of your account. username, email, repository
+			
+		- if you don't have git account, configure it with below command
+		# git config --global user.name "name"
+		# git config --global user.email "email"
+		
+		- conform the same command
+		# git config --global --list
+		- show user.nama, user.email
+		
+		
+		- [ working directory(git don't know of working directory) > commit(goes to staging area) > staging area(git work and take care of file) ]
+		- Think as every time, we commit = we create one version of that file or code
+		
+		// to know the status of git 
+		# git status
+			-fatal: not a git repository (or any of the parent directories): .git
+				- meaning git does not have repository yet
+				
+				
+		// we have to create a git Local repository ( meaning we have to initialize the git )
+		// below command create the empty Git repository folder is hidden but all the staging will be done here
+		# git init
+			
+			- show the file path of git repository.
+			- Remember that all the created file will be the part of project(working directory) but not part of .git
+		
+		// check the git status
+		# git status
+		
+		NOTE: we want to have the " On branch main " , Not a " On branch master "
+		To do that we have to remove the git
+		# rm -rf .git
+		or( go to directory > select the folder .git > shift + delete)
+		# git init 
+			- by default give the master directory
+		
+		// to get main
+		# git init -b main   // -b = branch
+		
+		// check git status
+		# git status
+		 
+	************************************ After Intalling Git Adding Folder *********************************
+		
+		
+		
+		
+	
+	
