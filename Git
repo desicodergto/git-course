@@ -170,6 +170,17 @@
 	// direct commit (meaning skipping the staging part = git add <file name>)
 	# git commit -a -m "comment"
 		- Working directory > commit history(objects)
+		[ make sure to save the file ]
 		
+	******************************** Git Diff command *********************************
+	
+	- after saving the file, git show the file has been modified
+	# git status
+	
+	// to know the difference has been made while in the working directory
+	# git diff
+		- show the difference of previous version and present version of file
 		
-		
+	// finding diff after adding to staging area
+	# git diff --stagged
+	
