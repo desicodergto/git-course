@@ -366,10 +366,41 @@
 	
 	// then have to push the tag 
 	# git push origin v1.0 ( git push branch version )
+		- also give the zar.file, when we click it, it start downloading
+		
+	
+	****************************** Think that you have to work on some other project *********************
+	// case senario of company
+	
+	// we are going to take the vscode for example. we will take the vscode from the github.
+	- search the vscode > copy the https or ssh url
+	# git clone url
+		- wait until download
+	
+	// open the folder in your favorite code editor
+	- i will take tour with vscode in vscode
+	# git tag show versionnumber
+	# git tag
+	# git log --pretty=oneline  // show the all commit in one line
+	
+	// edit the file > save
+	// go to particular file path
+	Hint: git status show the modified file path and copy it 
+	// add the file ( git add file path ) 
+	// commit the file ( git commit -m "comment"
+	Hint: look the remote first to determine the branch
+	// git push branch main
+	
+	Note: using the https always ask you for userid and password
+		  if you don't want to use the useid or password use the ssh url
+		  - you just need to login once
+		  
+		  
+	// to remove the folder forcefullu
+	# rm -rf directoryName
 	
 	
-	
-	
+	*************************** git Branch ******************************
 	
 	
 	
