@@ -120,7 +120,7 @@
 		# git init -b main   // -b = branch
 		
 		// check git status
-		# git status
+	# git status
 		 
 	************************************ After Intalling Git Adding Folder *********************************
 	
@@ -135,7 +135,7 @@
 		- look for the instruction, we will find the "Changes to be commited:"
 	
 	// to remove from staging area
-	# git rm -cached <file name>
+	# git rm --cached <file name>
 		
 	// to know all the commit history
 	# git log
@@ -341,6 +341,37 @@
 	// How do we verify ? 
 	- Refresh the github page.
 	
+	// to see the origin
+	# git remote -v
+		- show the origin
+		
+	// ************* about tag **************************8
+	- Every program have the version number
+	- if we go to about of the program, we can find the commit detail of program
+	
+	- Tag = version number which we give to the program
+	
+	// to show all the tag given to program or file 
+	# git tag
+	
+	// there are two way to give the tag 
+	1. Lightweight Tagging
+	2. Annotated Tagging = full detail to the user and program like ( who will use, who is commit it, etc) 
+	In this case use Annotated Tagging. Except this use Lightweight Tagging
+	
+	// to put tag 
+	# git tag -a v1.0 -m "First Release"
+	
+	// after release we have to put tag 
+	
+	// then have to push the tag 
+	# git push origin v1.0 ( git push branch version )
+	
+	
+	
+	
+	
+	
 	
 	  // create one any file by following the below command
 	  echo "# git-course" >> README.md
@@ -357,9 +388,9 @@
 		git branch -M main
 		git push -u origin main
 		
+	
 		
 	
 			  
 	   
 		 
-	
