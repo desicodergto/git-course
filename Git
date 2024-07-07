@@ -186,5 +186,180 @@
 	
 	[ NOTE: Readme.md  where md = markdown, used for proper documentation ]
 	
+	// adding all file to staging area
+	# git add .
+		or we have do one by one 
+	// to commit all the file
+	# git commit -m "comment"
 	
+	NOTE: to delete from commit ( don't delete from the working directory )
+	Because if you do push to git then, every one can see it. 
+	Before doing push, delete it from commit
+		git rm --cached <filename>
+		
+		-after removing from the git, then delete from the working repository
+		
+	*************************** Remote Repository *************************************
+	Q: What is a Remote Repository?
+	A: Server repository which can be access by multiple people.
+	
+	1. github = mostly used by normal people ( can be used by anyone )
+	2. gitlab = mostly used by private or corporation for more security reason ( can be used by anyone )
+	3. Bitbucket = have good feature
+		
+	// To clone the github repository with https
+	# git clone <https-address>	
+		- to cancel the downloading use ( control + c )
+		- to remove the repository use ( rm -rf repository )
+		
+	***************************** Creating Github Account *****************************
+	
+	-signup
+	-email
+	-fill the form and follow the steps
+	
+	- to create the repository > click + button > new repository > fill the form 
+		- Readme file = detail of project
+		
+	  // make directory for the project or file which you are working on 
+	  # mkdir git-course
+	  
+	  // move to created directory 
+	  # cd git-course/
+	  
+	  // For now we will do one by one here 
+	  // to create file and put some message
+	  # echo "This is git-course demo file" >> Readme.md	//( echo "Message" >> filename.extension ) 
+	  	- create Readme.md file and put the message in it.
+	  
+	  // to see the content of file
+	  # cat filename.extention
+	  
+	  // we have created file and read it 
+	  // still we don't have the git connection 
+	  // to initiate the git 
+	  # git init 
+	  	- create the empty git repository
+	  
+	  // check the folder and conform
+	  # ls
+	  	- show the file and may be not show the file 
+	  
+	  // to show all file 
+	  # ls -a 
+	  	- show show all file and hidden
+	  	
+	  // stage the file 
+	  #  git add filename
+	  
+	  // commit the file 
+	  # git commit -m "comment"
+	  
+	  // check the status
+	  # git  status
+	  
+	  // create the branch ( because we get the default branch as master branch
+	  # git branch -M main
+	  	- create the branch called main
+	  	
+	  Note: we are still in the local repository
+	  so, we need to create the remote repository
+	  
+	  Q: How we will connect to the remote repository?
+	  A: we will need the SSH and https 
+	  	SSH = once we log in it detect the id, who we are. [ ssg-keygen -o ] 
+	  			- which generate the key pair for public and private
+	  	https = we have to log in every time while push
+	  	
+	  	
+	  // got generate the ssh keygen
+	  # ssh-keygen -o
+	  	- Generating public/private ed25519 key pair. 
+	  	
+	  // we can put the file name, where to go
+	  // for default hit enter
+	  - i will go with enter
+	  	
+	  // ask you for passphrase 
+	  // i will go with default ( so hit enter )
+	  // hit enter for default until 	like  below:
+	  
+	  The key's randomart image is:
+			+--[ED25519 256]--+
+			|     .o.         |
+			| ....=.. .       |
+			|  o*=o+ o .      |
+			| oo.X=   o       |
+			|Eo.Oo=  S        |
+			|oo& *            |
+			|o* * .           |
+			|+++              |
+			|OB.              |
+			+----[SHA243]-----+
+			
+	// After getting this, the file has been created successfully
+	
+	// to find the file, we have created
+	// look for all the file after going back to file 
+	# cd
+	# ls
+	# ls -a		// for all the file to show
+	
+	// look for the .ssh file, which we have created
+		- like .ssh
+		
+	// go to folder
+	# cd .ssh
+	
+	// look for the .pub extention file and open it using the cat command
+	# cat filename with extension
+		- show all the ssh code
+	
+	// Q: Where do i use this key? How to use it ?
+	   A: copy the key and paste it to github 
+	   Steps: ( remote repository ) > profile > setting > Look for the SSH and GPG keys  > click on new SSH key > give title > Paste to key section > click on add sshkay
+	  	
+	// after adding sshkey , we will get the gmail and 
+	// now we have to local repository and remote repository is connected
+	// meaning every time we push, then it conform it, from which client it is coming
+	
+	// after that go to the folder that we are working on 
+	// using the ls and cd command
+	// verify the folder and project file that we are working
+	 
+	// now we will use the command
+	git remote add origin git@github.com:desicodergto/git-course.git
+		- git remote and remote to connect
+	- we have done to connect or map the local and remote repository
+	
+	// At this point, the remote is empty and we have to move the local file to remote
+	# git push -u origin main ( -u = upstrim , origin main = branch name, push = meaning pushing data to remote repository main branch )
+	
+	// get promt to conform the right key or not with yes/no question
+	- after conforming the key, write yes and enter
+	
+	// How do we verify ? 
+	- Refresh the github page.
+	
+	
+	  // create one any file by following the below command
+	  echo "# git-course" >> README.md
+		git init
+		git add README.md
+		git commit -m "first commit"
+		git branch -M main
+		git remote add origin git@github.com:desicodergto/git-course.git
+		git push -u origin main
+		
+		
+	// To push an existing repository from the command line
+		git remote add origin git@github.com:desicodergto/git-course.git
+		git branch -M main
+		git push -u origin main
+		
+		
+	
+			  
+	   
+		 
 	
