@@ -401,6 +401,40 @@
 	
 	
 	*************************** git Branch ******************************
+	// creating the branch 
+	// NOTE: It is more benefit when we are doing the experiment with the source code. So that, the main source will not effects
+	
+	* one way: we can create the branch from the github option (click on main > select branch or look for branch > name the branch)
+	
+	* another way: by using the git command -
+		# git checkout ( old version )
+		# git switch   ( new version )
+		
+		Example: git checkout <branch name> ( this command run when the branch is existing.
+		
+		NOTE: For the first time we have to create the branch.
+		// To create the branch
+		
+		# git checkout --branch feature1
+		# git checkout -b feature1	( create the branch and switch to the branch ) 
+		[Switched to a new branch 'feature1'] This message will appear
+		
+		// to show the branches
+		# git branch
+		NOTE: branch name having the star meaning current branch
+		
+		Edit the file and save it.
+		// check the status 
+		# git status
+		
+		show the current branch we are working on.
+		- add the file 
+		- 
+			
+		// to know the which branch is active 
+		# 
+		
+		
 	
 	
 	
