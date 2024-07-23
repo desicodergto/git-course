@@ -464,6 +464,25 @@
 		NOTE: How it work?
 		-> Imaging it takes the snapshot of your file and gives the commit number (hexagonal number)
 		-> use the pointer to show the Head -> branch_name
+		Not simply copy all the file but it copy those file which has been changed or modified lines of code only ( checksome )
+		
+		// to show the graph
+		# git log -- graph
+		NOTE: to show all - hit enter button 
+		-> There is also Git Graph Extension ( in vscode - install > click to branch icon )
+		-> For eclipse ( subversion extension is available )
+		
+		
+		// to merge branches
+		-> one way: git merge 
+		-> another way: rebase
+		
+		1. git merge
+		- go to main branch
+		- use command
+		# git merge <branch_name>
+		
+		   
 		
 	
 	
