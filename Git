@@ -429,10 +429,24 @@
 		
 		show the current branch we are working on.
 		- add the file 
-		- 
+		- git commit
+		
+		// check the log
+		# git log
+		
+		// to switch the branch
+		# git checkout <branchname>
+		# git switch <branchname> 
+		
+		- If you don't know the branch 
+		# git branch ( show all the branch )
+		
 			
-		// to know the which branch is active 
-		# 
+		// to create the branch with switch command
+		# git switch -c <branchname>
+		# git switch --create <branchname>
+		
+		
 		
 		
 	
