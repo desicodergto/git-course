@@ -461,6 +461,55 @@
 		# git branch --delete <branchname>
 			- message: Deleted branch branch_name ( was serialNO )
 		
+		// check the log
+		# git log
+		
+		// to switch the branch
+		# git checkout <branchname>
+		# git switch <branchname> 
+		
+		- If you don't know the branch 
+		# git branch ( show all the branch )
+		
+			
+		// to create the branch with switch command
+		# git switch -c <branchname>
+		# git switch --create <branchname>
+		
+		
+		// Creating the multiple branch to do more experiment
+		
+		# git switch -c feature2
+		
+		// to switch to previous branch shortcut
+		# git switch -
+		
+		// to delete the branch 
+		# git branch -d <branchname>
+		# git branch --delete <branchname>
+			- message: Deleted branch branch_name ( was serialNO )
+			
+		NOTE: How it work?
+		-> Imaging it takes the snapshot of your file and gives the commit number (hexagonal number)
+		-> use the pointer to show the Head -> branch_name
+		Not simply copy all the file but it copy those file which has been changed or modified lines of code only ( checksome )
+		
+		// to show the graph
+		# git log -- graph
+		NOTE: to show all - hit enter button 
+		-> There is also Git Graph Extension ( in vscode - install > click to branch icon )
+		-> For eclipse ( subversion extension is available )
+		
+		
+		// to merge branches
+		-> one way: git merge 
+		-> another way: rebase
+		
+		1. git merge
+		- go to main branch
+		- use command
+		# git merge <branch_name>
+		
 		
 		
 		
