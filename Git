@@ -421,6 +421,7 @@
 		
 		// to show the branches
 		# git branch
+		# git branch --all [ Note: show Remote + Local all branch ]
 		NOTE: branch name having the star meaning current branch
 		
 		Edit the file and save it.
@@ -430,6 +431,7 @@
 		show the current branch we are working on.
 		- add the file 
 		- git commit
+		- git push --set-upstream origin <branchname> ( push the branch and upload the file )
 		
 		// check the log
 		# git log
@@ -445,6 +447,21 @@
 		// to create the branch with switch command
 		# git switch -c <branchname>
 		# git switch --create <branchname>
+		
+		
+		// Creating the multiple branch to do more experiment
+		
+		# git switch -c feature2
+		
+		// to switch to previous branch shortcut
+		# git switch -
+		
+		// to delete the branch 
+		# git branch -d <branchname>
+		# git branch --delete <branchname>
+			- message: Deleted branch branch_name ( was serialNO )
+		
+		
 		
 		
 		
