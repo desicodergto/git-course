@@ -403,121 +403,6 @@
 	*************************** git Branch ******************************
 	// creating the branch 
 	// NOTE: It is more benefit when we are doing the experiment with the source code. So that, the main source will not effects
-<<<<<<< HEAD
-=======
-	
-	* one way: we can create the branch from the github option (click on main > select branch or look for branch > name the branch)
-	
-	* another way: by using the git command -
-		# git checkout ( old version )
-		# git switch   ( new version )
-		
-		Example: git checkout <branch name> ( this command run when the branch is existing.
-		
-		NOTE: For the first time we have to create the branch.
-		// To create the branch
-		
-		# git checkout --branch feature1
-		# git checkout -b feature1	( create the branch and switch to the branch ) 
-		[Switched to a new branch 'feature1'] This message will appear
-		
-		// to show the branches
-		# git branch
-		# git branch --all [ Note: show Remote + Local all branch ]
-		NOTE: branch name having the star meaning current branch
-		
-		Edit the file and save it.
-		// check the status 
-		# git status
-		
-		show the current branch we are working on.
-		- add the file 
-		- git commit
-		- git push --set-upstream origin <branchname> ( push the branch and upload the file )
-		
-		// check the log
-		# git log
-		
-		// to switch the branch
-		# git checkout <branchname>
-		# git switch <branchname> 
-		
-		- If you don't know the branch 
-		# git branch ( show all the branch )
-		
-			
-		// to create the branch with switch command
-		# git switch -c <branchname>
-		# git switch --create <branchname>
-		
-		
-		// Creating the multiple branch to do more experiment
-		
-		# git switch -c feature2
-		
-		// to switch to previous branch shortcut
-		# git switch -
-		
-		// to delete the branch 
-		# git branch -d <branchname>
-		# git branch --delete <branchname>
-			- message: Deleted branch branch_name ( was serialNO )
-		
-		// check the log
-		# git log
-		
-		// to switch the branch
-		# git checkout <branchname>
-		# git switch <branchname> 
-		
-		- If you don't know the branch 
-		# git branch ( show all the branch )
-		
-			
-		// to create the branch with switch command
-		# git switch -c <branchname>
-		# git switch --create <branchname>
-		
-		
-		// Creating the multiple branch to do more experiment
-		
-		# git switch -c feature2
-		
-		// to switch to previous branch shortcut
-		# git switch -
-		
-		// to delete the branch 
-		# git branch -d <branchname>
-		# git branch --delete <branchname>
-			- message: Deleted branch branch_name ( was serialNO )
-			
-		NOTE: How it work?
-		-> Imaging it takes the snapshot of your file and gives the commit number (hexagonal number)
-		-> use the pointer to show the Head -> branch_name
-		Not simply copy all the file but it copy those file which has been changed or modified lines of code only ( checksome )
-		
-		// to show the graph
-		# git log -- graph
-		NOTE: to show all - hit enter button 
-		-> There is also Git Graph Extension ( in vscode - install > click to branch icon )
-		-> For eclipse ( subversion extension is available )
-		
-		
-		// to merge branches
-		-> one way: git merge 
-		-> another way: rebase
-		
-		1. git merge
-		- go to main branch
-		- use command
-		# git merge <branch_name>
-		
-		
-		
-		
-		
-		
->>>>>>> feature1
 	
 	* one way: we can create the branch from the github option (click on main > select branch or look for branch > name the branch)
 	
@@ -597,7 +482,18 @@
 		- use command
 		# git merge <branch_name>
 		
-		   
+		Note: 1. Always pull the remote repository to local mechine to get updated code
+			  2. Then edit
+			  
+			  // To pull
+			  # git pull origin <branch_name>
+			  
+		// to relove the conflict
+		- add the file 
+		- commit the file ( Don't forget to put comment )
+		- look for status
+		- merge the file 
+			  
 		
 	
 	
